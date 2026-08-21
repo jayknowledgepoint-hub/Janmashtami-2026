@@ -1,0 +1,35 @@
+
+:root{--maroon:#5a1020;--deep:#260811;--gold:#d8a83d;--cream:#fff7e7;--green:#173f38;--text:#2a1b17}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--text);background:linear-gradient(180deg,#fffaf0,#f7ead2)}
+a{color:inherit}.container{width:min(1100px,92%);margin:auto}
+.topbar{background:var(--deep);color:#ffe9a6;text-align:center;padding:9px;font-size:.88rem;letter-spacing:.5px}
+nav{position:sticky;top:0;z-index:20;background:rgba(38,8,17,.96);backdrop-filter:blur(8px);color:#fff}
+.navin{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:13px 0}
+.brand{font-weight:700;letter-spacing:1.2px;color:#f8d77a;text-decoration:none}
+.navlinks{display:flex;gap:16px;flex-wrap:wrap;justify-content:flex-end}.navlinks a{text-decoration:none;font-size:.92rem;color:#fff4d4}
+.hero{min-height:78vh;display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;background:linear-gradient(180deg,rgba(31,6,15,.48),rgba(31,6,15,.7)),url("assets/temple.jpg") center/cover}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 45%,transparent 10%,rgba(15,3,8,.58) 90%)}
+.hero-content{position:relative;z-index:1;color:white;padding:70px 15px}.peacock{font-size:2.4rem}
+.kicker{letter-spacing:4px;color:#f6d77c;font-size:.9rem}h1{font-size:clamp(3rem,9vw,7rem);line-height:.92;margin:18px 0;color:#ffe08b;text-shadow:0 3px 18px #000}
+.hero-date{font-size:clamp(1.3rem,3vw,2rem);letter-spacing:2px}.hero-place{font-size:1.15rem;margin:10px 0 28px}
+.btn{display:inline-block;background:linear-gradient(135deg,#e7bb53,#b47a17);color:#2b0c12;text-decoration:none;font-weight:700;padding:13px 22px;border-radius:999px;margin:6px;box-shadow:0 8px 25px rgba(0,0,0,.25)}
+.btn.alt{background:transparent;border:1px solid #e7c76d;color:#fff}
+.section{padding:70px 0}.section.dark{background:var(--deep);color:#fff7e8}.section.green{background:var(--green);color:#fff}
+.eyebrow{text-transform:uppercase;letter-spacing:3px;color:#a76a16;font-size:.78rem;font-weight:700}
+.dark .eyebrow,.green .eyebrow{color:#f2cf76}h2{font-size:clamp(2rem,5vw,3.5rem);margin:8px 0 18px;color:var(--maroon)}
+.dark h2,.green h2{color:#ffe29a}.lead{font-size:1.12rem;line-height:1.7;max-width:760px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:rgba(255,255,255,.84);border:1px solid rgba(174,128,44,.28);border-radius:22px;padding:24px;box-shadow:0 10px 30px rgba(73,31,9,.08)}
+.dark .card,.green .card{background:rgba(255,255,255,.08);border-color:rgba(255,221,137,.2)}
+.card h3{margin-top:0;color:var(--maroon)}.dark .card h3,.green .card h3{color:#ffe29a}
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery img{width:100%;height:260px;object-fit:cover;border-radius:18px}
+.timeline{display:grid;gap:18px}.event{display:grid;grid-template-columns:160px 1fr;gap:20px;align-items:start;background:#fffdf7;border-radius:20px;padding:20px;border-left:5px solid var(--gold);box-shadow:0 8px 24px rgba(67,28,8,.08)}
+.event .date{font-weight:700;color:var(--maroon)}.event h3{margin:0 0 6px;color:var(--maroon)}.event p{margin:5px 0;line-height:1.55}
+.qr{width:min(320px,80vw);border-radius:20px;background:white;padding:12px;display:block;margin:auto}
+.quote{text-align:center;font-size:clamp(1.5rem,4vw,2.5rem);font-style:italic;color:#7c1f2f}
+footer{background:#19050b;color:#ead7a4;text-align:center;padding:35px 15px}.small{font-size:.9rem;opacity:.8}
+.pagehero{padding:85px 0;background:linear-gradient(135deg,#3a0d18,#7b1d2e);color:#fff;text-align:center}.pagehero h1{font-size:clamp(2.8rem,7vw,5rem);margin:0;color:#ffe09a}
+.notice{background:#fff1c9;border:1px solid #dfb94f;border-radius:18px;padding:18px}.center{text-align:center}
+@media(max-width:800px){.navin{align-items:flex-start;flex-direction:column}.navlinks{gap:9px}.grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}
+.gallery img{height:190px}.event{grid-template-columns:1fr;gap:8px}.hero{min-height:82vh}}
