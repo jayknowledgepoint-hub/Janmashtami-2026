@@ -788,7 +788,12 @@ footer p{
     margin:4px 2px;
   }
       }
+/* Celebration page - reduce empty space before Krishna section */
 .invitation-section{
-  padding-top:25px;
-  padding-bottom:50px;
+  padding-top:45px;
+  padding-bottom:60px;
+}
+
+.invitation-section .quote{
+  margin-top:0;
 }
